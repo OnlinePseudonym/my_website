@@ -235,6 +235,7 @@ a {
     opacity: 0;
     transform: translateY(-3rem);
     transition: all .3s ease-in-out;
+    text-align: center;
   }
   
   .eml::after {
@@ -250,6 +251,7 @@ a {
   
   .eml__text {
     padding: 1rem;
+    z-index: 2;
   }
   
   .eml:hover {
