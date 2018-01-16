@@ -155,7 +155,7 @@ a {
 .hero--background {
     grid-row: 2;
     grid-column: 1 / span 3;
-    background-image: url("../images/computer_desk.png");
+    background-image: url("../images/computer_desk.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
