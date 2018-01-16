@@ -12,7 +12,6 @@ function pageLink() {
 }
 
 function toggleOpen() {
-    console.log(this)
     const title = this.children[0];
     const titleSmall = this.children[1];
     const details = this.children[2];
@@ -42,7 +41,6 @@ function toggleOpen() {
 }
 
 function toggleActive(e) {
-    console.log(e);
     if(e.propertyName.includes('flex-grow')) {
         this.classList.toggle('open-active');
     }
