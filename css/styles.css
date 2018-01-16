@@ -53,7 +53,6 @@ a {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     color: #759EB8;
-    padding-bottom: 1rem;
     font-size: 20px;
 }
 
@@ -64,11 +63,13 @@ a {
     font-weight: 600;
     letter-spacing: 4px;
     background: #759EB8;
-    color: #EAE6E5;
+    color: #fff;
     border-radius: 5px;
     padding: .5rem;
-    margin: 2rem;
+    margin: 1rem;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .header--nav {
@@ -114,9 +115,10 @@ a {
         grid-row: 1;
     }
     
-    .logo {
+    .header--logo {
         grid-column: 1;
         /* margin: 0; */
+        font-size: 1.75rem;
         align-self: center;
         justify-self: start;
     }
@@ -139,6 +141,12 @@ a {
     
     .header--resume {
         grid-column: 5;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .header--logo {
+        font-size: 2rem;
     }
 }
 
@@ -558,6 +566,7 @@ footer {
 .footer--logo {
     grid-area: 1 / 2 / 2 / 3;
     margin: 0;
+    color: #EAE6E5;
 }
 
 .footer-txt {
