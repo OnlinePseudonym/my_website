@@ -16,13 +16,16 @@ function toggleOpen() {
     const titleSmall = this.children[1];
     const details = this.children[2];
     const source = this.children[3];
-
+    
+    this.classList.toggle('disable-pointer');
+    setTimeout(() => this.classList.toggle('disable-pointer'), 1000);
+    
     if(this.classList.contains('open')) {
+        this.classList.toggle('open');
         title.classList.toggle('active');
         source.classList.toggle('active');
         titleSmall.classList.toggle('shrink');
         details.classList.toggle('slide-in');
-        this.classList.toggle('open');
     }
     else {
         projects.forEach(project => {
