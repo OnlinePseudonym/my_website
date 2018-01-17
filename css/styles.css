@@ -210,7 +210,7 @@ a {
     color: #c37f44;
 }
 
-.hero--content--button {
+/* .hero--content--button {
     position: relative;
     outline: none;
     grid-area: 2 / 2 / 3 / 3;
@@ -236,7 +236,7 @@ a {
     cursor: pointer;
 }
 
-/* Email Address popup */
+Email Address popup
 
 .eml {
     visibility: hidden;
@@ -279,7 +279,7 @@ a {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 @media only screen and (min-width: 400px) {
     .hero--content {
@@ -295,10 +295,10 @@ a {
         grid-area: 3 / 2 / 3 / 4;
     }
     
-    .hero--content--button {
+/*     .hero--content--button {
         grid-area: 2 / 3 / 3 / 4;
         font-size: 1rem;
-    }
+    } */
 }
 
 @media only screen and (min-width: 514px) {
@@ -306,13 +306,13 @@ a {
         font-size: 1.25rem;
     }
 
-    .eml {
+/*     .eml {
         left: -8.5rem;
     }
 
     .eml::after {
         left: 12rem;
-    }
+    } */
 }
 
 @media only screen and (min-width: 605px) {
@@ -321,13 +321,13 @@ a {
         font-size: 1.5rem;
     }
 
-    .eml {
+/*     .eml {
         left: -6rem;
     }
 
     .eml::after {
         left: 9.5rem;
-    }
+    } */
     
 }
 
