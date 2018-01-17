@@ -14,6 +14,23 @@ function pageLink() {
     window.open(url, '')
 }
 
+function closeAll() {
+    projects.forEach(project => {
+        project.classList.remove('open');
+        project.children[1].classList.remove('shrink');
+        project.children[2].classList.remove('appear');
+        project.children[3].classList.remove('slide-in');
+        project.children[0].classList.remove('active');
+        project.children[4].classList.remove('active');
+    });
+    toggles.forEach(toggle => {
+        toggle.style.transform = 'translateX(0px)';
+        toggle.children[0].style.transform = 'rotate(0deg)';
+    });
+
+    isOpen = false;
+}
+
 function toggleOpen() {
     const title = this.children[0];
     const titleSmall = this.children[1];
@@ -26,33 +43,15 @@ function toggleOpen() {
     this.classList.toggle('disable-pointer');
     setTimeout(() => this.classList.toggle('disable-pointer'), 1000);
     
-    if(this.classList.contains('open')) {
-        this.classList.toggle('open');
-        title.classList.toggle('active');
-        source.classList.toggle('active');
-        titleSmall.classList.toggle('shrink');
-        toggle.classList.toggle('appear');
+    if(!this.classList.contains('open')) {
+        closeAll();
     }
-    else {
-        projects.forEach(project => {
-            project.classList.remove('open');
-            project.children[1].classList.remove('shrink');
-            project.children[2].classList.remove('appear');
-            project.children[3].classList.remove('slide-in');
-            project.children[0].classList.remove('active');
-            project.children[4].classList.remove('active');
-        });
-        toggles.forEach(toggle => {
-            toggle.style.transform = 'translateX(0px)';
-            toggle.children[0].style.transform = 'rotate(0deg)';
-        });
-        this.classList.toggle('open');
-        title.classList.toggle('active');
-        source.classList.toggle('active');
-        titleSmall.classList.toggle('shrink');
-        toggle.classList.toggle('appear');
-        isOpen = false;
-    }
+    
+    this.classList.toggle('open');
+    title.classList.toggle('active');
+    source.classList.toggle('active');
+    titleSmall.classList.toggle('shrink');
+    toggle.classList.toggle('appear');
 }
 
 function openDetails(e) {
