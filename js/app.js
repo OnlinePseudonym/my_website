@@ -47,6 +47,7 @@ function toggleOpen() {
         closeAll();
     }
     
+    details.classList.remove('slide-in');
     this.classList.toggle('open');
     title.classList.toggle('active');
     source.classList.toggle('active');
