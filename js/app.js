@@ -17,11 +17,11 @@ function pageLink() {
 function closeAll() {
     projects.forEach(project => {
         project.classList.remove('open');
-        project.children[1].classList.remove('shrink');
-        project.children[2].classList.remove('appear');
-        project.children[3].classList.remove('slide-in');
-        project.children[0].classList.remove('active');
-        project.children[4].classList.remove('active');
+        project.querySelector('.project--title-small').classList.remove('shrink');
+        project.querySelector('.project--details-toggle').classList.remove('appear');
+        project.querySelector('.project--details--container').classList.remove('slide-in');
+        project.querySelector('.project--title').classList.remove('active');
+        project.querySelector('.project--link').classList.remove('active');
     });
     toggles.forEach(toggle => {
         toggle.style.transform = 'translateX(0px)';
@@ -32,13 +32,11 @@ function closeAll() {
 }
 
 function toggleOpen() {
-    const title = this.children[0];
-    const titleSmall = this.children[1];
-    const toggle = this.children[2];
-    const details = this.children[3];
-    const source = this.children[4];
-    
-    console.log(details.children[0].offsetWidth);
+    const title = this.querySelector('.project--title');
+    const titleSmall = this.querySelector('.project--title-small');
+    const toggle = this.querySelector('.project--details-toggle');
+    const details = this.querySelector('.project--details--container');
+    const source = this.querySelector('.project--link');
 
     this.classList.toggle('disable-pointer');
     setTimeout(() => this.classList.toggle('disable-pointer'), 1000);
@@ -48,6 +46,7 @@ function toggleOpen() {
     }
     
     details.classList.remove('slide-in');
+    
     this.classList.toggle('open');
     title.classList.toggle('active');
     source.classList.toggle('active');
@@ -59,8 +58,8 @@ function openDetails(e) {
     e.stopPropagation();
     
     const details = this.nextElementSibling;
-    const width = details.children[0].offsetWidth;
-    const icon = this.children[0];
+    const width = details.querySelector('.project--details').offsetWidth;
+    const icon = this.querySelector('.fa-chevron-circle-left');
     
     details.classList.toggle('slide-in');
     
