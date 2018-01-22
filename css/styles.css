@@ -469,7 +469,7 @@ main {
     flex-direction: row-reverse;
     justify-content: left;
     align-items: start;
-    font-size: 1rem;
+    font-size: 0px;
     background: none;
     color: #326483;
     border: none;
@@ -482,7 +482,7 @@ main {
     
 .project--details {
     height: 100%;
-    font-size: 14px;
+    font-size: 0px;
     flex-basis: 66%;
     background: rgba(0, 0, 0, 0.9);
     color: #EAE6E5;
@@ -556,6 +556,10 @@ main {
     opacity: 1;
 /*     transition: 
         transform 0.8s ease-out 1s; */
+}
+
+.increase-font {
+    font-size: 14px;
 }
 
 .active {

@@ -20,6 +20,7 @@ function closeAll() {
         project.querySelector('.project--title-small').classList.remove('shrink');
         project.querySelector('.project--details-toggle').classList.remove('appear');
         project.querySelector('.project--details--container').classList.remove('slide-in');
+        setTimeout(() => project.querySelector('.project--details--container').querySelector('.project--details').classList.remove('increase-font'), 800);
         project.querySelector('.project--title').classList.remove('active');
         project.querySelector('.project--link').classList.remove('active');
     });
@@ -46,6 +47,7 @@ function toggleOpen() {
     }
     
     details.classList.remove('slide-in');
+    setTimeout(() => details.querySelector('.project--details').classList.remove('increase-font'), 800);
     
     this.classList.toggle('open');
     title.classList.toggle('active');
@@ -57,11 +59,17 @@ function toggleOpen() {
 function openDetails(e) {
     e.stopPropagation();
     
-    const details = this.nextElementSibling;
-    const width = details.querySelector('.project--details').offsetWidth;
+    const slider = this.nextElementSibling;
+    const details = slider.querySelector('.project--details');
+    const width = details.offsetWidth;
     const icon = this.querySelector('.fa-chevron-circle-left');
     
-    details.classList.toggle('slide-in');
+    slider.classList.toggle('slide-in');
+    if (details.classList.contains('increase-font')) {
+        setTimeout(() => details.classList.remove('increase-font'), 800);
+    } else {
+        details.classList.add('increase-font');
+    }
     
     if(!isOpen) {
         this.style.transform = `translateX(-${width}px)`;
