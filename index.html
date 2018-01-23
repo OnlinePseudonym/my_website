@@ -1,189 +1,218 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu:400,600" rel="stylesheet">
-        <title>Kevin Reynolds | Portfolio</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo header--logo">KEVIN REYNOLDS</div>
-            <a class="header--nav header--github link" href="https://github.com/OnlinePseudonym">
-                <i class="header--icon fab fa-github"></i>
-                <span class="icon-txt">&nbsp;GitHub&nbsp;</span>
-            </a>
-            <a class="header--nav header--codepen link" href="https://codepen.io/OnlinePseudonym/">
-                <i class="header--icon fab fa-codepen"></i>
-                &nbsp;CodePen&nbsp;
-            </a>
-            <a class="header--nav header--projects" href="#projects">
-                <i class="header--icon far fa-map"></i>
-                &nbsp;Projects&nbsp;
-            </a>
-            <a class="header--nav header--resume" href="images/resume.pdf" download>
-                <i class="header--icon fas fa-download"></i>
-                &nbsp;Resume&nbsp;
-            </a>
-        </header>
-        <div class="hero--background"></div>
-        <div class="hero--content">
-            <div class="hero--content--class--declaration">
-                <p><span class="declare">class</span> <span class="class">WebDeveloper</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">constructor</span>(<span class="variable">name</span>) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="declare">this</span>.<span class="variable">name</span> = <span class="variable">name</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>}</p>
-            </div>
-            <div class="hero--content--class--expression">
-                    <p><span class="declare">const</span> <span class="variable">me</span> = <span class="declare">new</span> <span class="class">WebDeveloper</span>(<span class="text">'Kevin Reynolds'</span>)<br><br></p>
-            </div>
-            <!-- <div class="hero--content--button">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu:400,600" rel="stylesheet">
+    <title>Kevin Reynolds | Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo header--logo">KEVIN REYNOLDS</div>
+        <a class="header--nav header--github link" href="https://github.com/OnlinePseudonym">
+            <i class="header--icon fab fa-github"></i>
+            <span class="icon-txt">&nbsp;GitHub&nbsp;</span>
+        </a>
+        <a class="header--nav header--codepen link" href="https://codepen.io/OnlinePseudonym/">
+            <i class="header--icon fab fa-codepen"></i>
+            &nbsp;CodePen&nbsp;
+        </a>
+        <a class="header--nav header--projects" href="#projects">
+            <i class="header--icon far fa-map"></i>
+            &nbsp;Projects&nbsp;
+        </a>
+        <a class="header--nav header--resume" href="images/resume.pdf" download>
+            <i class="header--icon fas fa-download"></i>
+            &nbsp;Resume&nbsp;
+        </a>
+    </header>
+    <div class="hero--background"></div>
+    <div class="hero--content">
+        <div class="hero--content--class--declaration">
+            <p>
+                <span class="declare">class</span>
+                <span class="class">WebDeveloper</span> {
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="constructor">constructor</span>(
+                <span class="variable">name</span>) {
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="declare">this</span>.
+                <span class="variable">name</span> =
+                <span class="variable">name</span>;
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+                <br>}</p>
+        </div>
+        <div class="hero--content--class--expression">
+            <p>
+                <span class="declare">const</span>
+                <span class="variable">me</span> =
+                <span class="declare">new</span>
+                <span class="class">WebDeveloper</span>(
+                <span class="text">'Kevin Reynolds'</span>)
+                <br>
+                <br>
+            </p>
+        </div>
+        <!-- <div class="hero--content--button">
                 <span class="eml">
                     <span class="eml__text">Kevin.T.Reynolds30@gmail.com</span>
                 </span>
                 Contact Me
             </div> -->
-        </div>
-        <main class="main">
-            <section class="bio">
-                <h1 class="title">About Me</h1>
-                <div class="seperator"></div>
-                <article class="about-me">
-                    <p class="body-txt">I'm a front-end web developer based out of Phoenix, Arizona. I am self-taught and highly motivated.</p>
-                    <p class="body-txt">I've been learning from various moocs and online courses since the beginning of 2017 and have laid a solid foundation of HTML, CSS and JS to build upon. I have some experience with a few other languages (C, Python, Java) but have been focusing on JavaScript.</p>
-                    <p class="body-txt">I am always learning, trying to expose myself to emerging technologies and trends. I am currently focusing on learning React and honing my design chops.</p>
-                    <p class="body-txt">I am a master googler, with Stack Overflow proficiency.</p>
-                </article>
-            </section>
-            <section id="projects" class="featured--projects">
-                <h1 class="title">Featured Projects</h1>
-                <div class="seperator"></div>
-                <div class="projects">
-                    <div class="project project1">
-                        <a class="project--title link" href="https://onlinepseudonym.github.io/fend-project-memory-game/">Live Demo: Matching Game</a>
-                        <div class="project--title-small">Memory</div>
-                        <div class="project--details-toggle">
-                            <i class="fas fa-chevron-circle-left"></i>
-                        </div>
-                        <div class="project--details--container">
-                            <div class="project--details">
-                                <h3 class="details-title">Tech Used</h3>
-                                <p class="details-txt">&bull; HTML</p>
-                                <p class="details-txt">&bull; CSS</p>
-                                <p class="details-txt">&bull; JS</p>
-                                <h3 class="details-title">Objective</h3>
-                                <p class="details-txt">Strengthen my grasp of Javascript</p>
-                                <h3 class="details-title">Highlights</h3>
-                                <p class="details-txt">This was my first project where I was given a task and had to figure it out on my own.</p>
-                                <p class="details-txt">The code may not be the most elegant but I was very proud of this at the time, and my 2 year old daughter loved helping me debug it.</p>
-                            </div>
-                        </div>
-                        <a class="project--link link" href="https://github.com/OnlinePseudonym/fend-project-memory-game">View Source</a>
+    </div>
+    <main class="main">
+        <section class="bio">
+            <h1 class="title">About Me</h1>
+            <div class="seperator"></div>
+            <article class="about-me">
+                <p class="body-txt">I'm a front-end web developer based out of Phoenix, Arizona. I am self-taught and highly motivated.</p>
+                <p class="body-txt">I've been learning from various moocs and online courses since the beginning of 2017 and have laid a solid
+                    foundation of HTML, CSS and JS to build upon. I have some experience with a few other languages (C, Python,
+                    Java) but have been focusing on JavaScript.</p>
+                <p class="body-txt">I am always learning, trying to expose myself to emerging technologies and trends. I am currently focusing
+                    on learning React and honing my design chops.</p>
+                <p class="body-txt">I am a master googler, with Stack Overflow proficiency.</p>
+            </article>
+        </section>
+        <section id="projects" class="featured--projects">
+            <h1 class="title">Featured Projects</h1>
+            <div class="seperator"></div>
+            <div class="projects">
+                <div class="project project1">
+                    <a class="project--title link" href="https://onlinepseudonym.github.io/fend-project-memory-game/">Live Demo: Matching Game</a>
+                    <div class="project--title-small">Memory</div>
+                    <div class="project--details-toggle">
+                        <i class="fas fa-chevron-circle-left"></i>
                     </div>
-                    <div class="project project2">
-                        <a class="project--title link" href="https://onlinepseudonym.github.io/frontend-nanodegree-arcade-game/">Live Demo: Frogger Clone</a>
-                        <div class="project--title-small">Frogger</div>
-                        <div class="project--details-toggle">
-                            <i class="fas fa-chevron-circle-left"></i>
+                    <div class="project--details--container">
+                        <div class="project--details">
+                            <h3 class="details-title">Tech Used</h3>
+                            <p class="details-txt">&bull; HTML</p>
+                            <p class="details-txt">&bull; CSS</p>
+                            <p class="details-txt">&bull; jQuery</p>
+                            <h3 class="details-title">Objective</h3>
+                            <p class="details-txt">Strengthen my grasp of Javascript</p>
+                            <h3 class="details-title">Highlights</h3>
+                            <p class="details-txt">This was one of my first projects in my Front-End Nanodegree </p>
+                            <p class="details-txt">I learned jQuery and the importance of breaking things into smaller managable steps.</p>
                         </div>
-                        <div class="project--details--container">
-                            <div class="project--details">
-                                <h3 class="details-title">Tech Used</h3>
-                                <p class="details-txt">&bull; JS</p>
-                                <h3 class="details-title">Objective</h3>
-                                <p class="details-txt">Familiarize myself with Javascript prototypes</p>
-                                <h3 class="details-title">Highlights</h3>
-                                <p class="details-txt">This project helped me think more programatically, it was one of my first experiences with an OOP approach</p>
-                                <p class="details-txt">I was intimidated at first but after breaking the project down into managable pieces it was really quite simple</p>
-                            </div>
-                        </div>
-                        <a class="project--link link" href="https://github.com/OnlinePseudonym/frontend-nanodegree-arcade-game">View Source</a>                    
                     </div>
-                    <div class="project project3">
-                        <a class="project--title link" href="https://onlinepseudonym.github.io/neighborhood_map/">Live Demo: Interactive Map</a>
-                        <div class="project--title-small">Map</div>
-                        <div class="project--details-toggle">
-                            <i class="fas fa-chevron-circle-left"></i>
-                        </div>
-                        <div class="project--details--container">
-                            <div class="project--details">
-                                <h3 class="details-title">Tech Used</h3>
-                                <p class="details-txt">&bull; HTML</p>
-                                <p class="details-txt">&bull; CSS</p>
-                                <p class="details-txt">&bull; JS</p>
-                                <p class="details-txt">&bull; Knockout</p>
-                                <p class="details-txt">&bull; jQuery</p>
-                                <h3 class="details-title">Objective</h3>
-                                <p class="details-txt">Practice working with APIs</p>
-                                <h3 class="details-title">Highlights</h3>
-                                <p class="details-txt">This was probably the project where I've learned the most so far, working with APIs and promises seemed so overwhelming before I dove in.</p>
-                                <p class="details-txt">While I learned a lot about APIs I'm not ecstatic about how I implemented everything, a lot of googleing and sometimes pounding a square peg in a round hole. Adding jQuery for a couple of lines of code was overkill, and I'm really unhappy with the look, I've learned loads about CSS since then and just general design principles.</p>
-                            </div>                        </div>
-                        <a class="project--link link" href="https://github.com/OnlinePseudonym/neighborhood_map">View Source</a>
-                    </div>
-                    <div class="project project4">
-                        <a class="project--title link" href="https://onlinepseudonym.github.io/reactTicTacToe/">Live Demo: Tic Tac Toe</a>
-                        <div class="project--title-small">Tic Tac Toe</div>
-                        <div class="project--details-toggle">
-                            <i class="fas fa-chevron-circle-left"></i>
-                        </div>
-                        <div class="project--details--container">
-                            <div class="project--details">
-                                <h3 class="details-title">Tech Used</h3>
-                                <p class="details-txt">&bull; React</p>
-                                <p class="details-txt">&bull; HTML</p>
-                                <p class="details-txt">&bull; CSS</p>
-                                <h3 class="details-title">Objective</h3>
-                                <p class="details-txt">Familiarize myself with React</p>
-                                <h3 class="details-title">Highlights</h3>
-                                <p class="details-txt">This is the my implementation of the official React Tutorial, with some modifications and style added.</p>
-                                <p class="details-txt">React is such a fundamental change from Javascript, frankly I thought it would be easier to pick up like jQuery or Knockout, but this was a solid intro to declarative programming.</p>
-                            </div>
-                        </div>
-                        <a class="project--link link" href="https://github.com/OnlinePseudonym/reactTicTacToe">View Source</a>
-                    </div>
-                    <div class="project project5">
-                        <a class="project--title link" href="https://onlinepseudonym.github.io/getting_fishy/">Live Demo: Inventory App</a>
-                        <div class="project--title-small">Inventory</div>
-                        <div class="project--details-toggle">
-                            <i class="fas fa-chevron-circle-left"></i>
-                        </div>
-                        <div class="project--details--container">
-                            <div class="project--details">
-                                <h3 class="details-title">Tech Used</h3>
-                                <p class="details-txt">&bull; React</p>
-                                <p class="details-txt">&bull; HTML</p>
-                                <p class="details-txt">&bull; CSS</p>
-                                <h3 class="details-title">Objective</h3>
-                                <p class="details-txt">Further practice with React</p>
-                                <h3 class="details-title">Highlights</h3>
-                                <p class="details-txt">This is my implementation of an inventory app as part of Wes Bos' series React for Beginners.</p>
-                                <p class="details-txt">This stepped me through full deployment of a React act using create-react-app, I'm still not entirely comfortable using React but practice makes perfect and I'm getting more comfortable every day!</p>
-                            </div>
-                            </div>
-                        <a class="project--link link" href="https://github.com/OnlinePseudonym/React-For-Beginners-Starter-Files">View Source</a>
-                    </div>
+                    <a class="project--link link" href="https://github.com/OnlinePseudonym/fend-project-memory-game">View Source</a>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer--bg"></div>
-            <div class="footer">
-                <div class="logo footer--logo">KR</div>
-                <div class="footer-content">
-                    <p class="footer-txt footer-eml">Kevin.T.Reynolds30@gmail.com</p>
-                    <p class="footer-txt">&copy; Kevin Reynolds 2018.</p>
-                    <p class="footer-txt">All rights reserved.</p>
+                <div class="project project2">
+                    <a class="project--title link" href="https://onlinepseudonym.github.io/frontend-nanodegree-arcade-game/">Live Demo: Frogger Clone</a>
+                    <div class="project--title-small">Frogger</div>
+                    <div class="project--details-toggle">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </div>
+                    <div class="project--details--container">
+                        <div class="project--details">
+                            <h3 class="details-title">Tech Used</h3>
+                            <p class="details-txt">&bull; JS</p>
+                            <h3 class="details-title">Objective</h3>
+                            <p class="details-txt">Familiarize myself with Javascript prototypes</p>
+                            <h3 class="details-title">Highlights</h3>
+                            <p class="details-txt">This project helped me think more programatically, it was one of my first experiences with an
+                                OOP approach</p>
+                            <p class="details-txt">I learned to factor out common attributes of classes and think about how my code interacts with itself, in this case the collision of different characters.</p>
+                        </div>
+                    </div>
+                    <a class="project--link link" href="https://github.com/OnlinePseudonym/frontend-nanodegree-arcade-game">View Source</a>
                 </div>
-                <div class="footer--links">
-                    <a class="link footer__links-github" href="https://github.com/OnlinePseudonym">
-                        <i class="footer--icon fab fa-github"></i>
-                    </a>
-                    <a class="link footer__links-codepen" href="https://codepen.io/OnlinePseudonym/">
-                        <i class="footer--icon fab fa-codepen"></i>
-                    </a>
+                <div class="project project3">
+                    <a class="project--title link" href="https://onlinepseudonym.github.io/neighborhood_map/">Live Demo: Interactive Map</a>
+                    <div class="project--title-small">Map</div>
+                    <div class="project--details-toggle">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </div>
+                    <div class="project--details--container">
+                        <div class="project--details">
+                            <h3 class="details-title">Tech Used</h3>
+                            <p class="details-txt">&bull; HTML</p>
+                            <p class="details-txt">&bull; CSS</p>
+                            <p class="details-txt">&bull; JS</p>
+                            <p class="details-txt">&bull; Knockout</p>
+                            <p class="details-txt">&bull; jQuery</p>
+                            <h3 class="details-title">Objective</h3>
+                            <p class="details-txt">Practice working with APIs</p>
+                            <h3 class="details-title">Highlights</h3>
+                            <p class="details-txt">This was probably the project where I've learned the most so far, the first project where I've started with absolutely nothing</p>
+                            <p class="details-txt">While I learned a lot about APIs I'm not ecstatic about how I implemented everything, a lot of
+                                googleing and sometimes pounding a square peg in a round hole. Adding jQuery for a couple
+                                of lines of code was overkill, and I'm really unhappy with the look, I've learned loads about
+                                CSS since then and just general design principles.</p>
+                        </div>
+                    </div>
+                    <a class="project--link link" href="https://github.com/OnlinePseudonym/neighborhood_map">View Source</a>
+                </div>
+                <div class="project project4">
+                    <a class="project--title link" href="https://onlinepseudonym.github.io/reactTicTacToe/">Live Demo: Tic Tac Toe</a>
+                    <div class="project--title-small">Tic Tac Toe</div>
+                    <div class="project--details-toggle">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </div>
+                    <div class="project--details--container">
+                        <div class="project--details">
+                            <h3 class="details-title">Tech Used</h3>
+                            <p class="details-txt">&bull; React</p>
+                            <p class="details-txt">&bull; CSS</p>
+                            <h3 class="details-title">Objective</h3>
+                            <p class="details-txt">Familiarize myself with React</p>
+                            <h3 class="details-title">Highlights</h3>
+                            <p class="details-txt">This is the my implementation of the official React tutorial, with some modifications and styling
+                                added.</p>
+                            <p class="details-txt">This was a good introduction to React and left some implementation up to the student which I liked but didn't cover much in depth.</p>
+                        </div>
+                    </div>
+                    <a class="project--link link" href="https://github.com/OnlinePseudonym/reactTicTacToe">View Source</a>
+                </div>
+                <div class="project project5">
+                    <a class="project--title link" href="https://onlinepseudonym.github.io/getting_fishy/">Live Demo: Inventory App</a>
+                    <div class="project--title-small">Inventory</div>
+                    <div class="project--details-toggle">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </div>
+                    <div class="project--details--container">
+                        <div class="project--details">
+                            <h3 class="details-title">Tech Used</h3>
+                            <p class="details-txt">&bull; React</p>
+                            <p class="details-txt">&bull; CSS</p>
+                            <h3 class="details-title">Objective</h3>
+                            <p class="details-txt">Further practice with React</p>
+                            <h3 class="details-title">Highlights</h3>
+                            <p class="details-txt">This is my implementation of an inventory app as part of Wes Bos' series React for Beginners.</p>
+                            <p class="details-txt">Some more of the same from the official tutorial, It's good expose to the syntax and I'm sure helps but I'm don't feel like I'm understanding it all quite yet.</p>
+                        </div>
+                    </div>
+                    <a class="project--link link" href="https://github.com/OnlinePseudonym/React-For-Beginners-Starter-Files">View Source</a>
                 </div>
             </div>
-        </footer>
-        <script src="js/app.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-    </body>
+        </section>
+    </main>
+    <footer>
+        <div class="footer--bg"></div>
+        <div class="footer">
+            <div class="logo footer--logo">KR</div>
+            <div class="footer-content">
+                <p class="footer-txt footer-eml">Kevin.T.Reynolds30@gmail.com</p>
+                <p class="footer-txt">&copy; Kevin Reynolds 2018.</p>
+                <p class="footer-txt">All rights reserved.</p>
+            </div>
+            <div class="footer--links">
+                <a class="link footer__links-github" href="https://github.com/OnlinePseudonym">
+                    <i class="footer--icon fab fa-github"></i>
+                </a>
+                <a class="link footer__links-codepen" href="https://codepen.io/OnlinePseudonym/">
+                    <i class="footer--icon fab fa-codepen"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</body>
+
 </html>
