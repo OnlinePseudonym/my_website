@@ -10,10 +10,6 @@ function openLink(e) {
     window.open(this.href, '_blank');
 }
 
-function pageLink() {
-    window.open(url, '')
-}
-
 function closeAll() {
     projects.forEach(project => {
         project.classList.remove('open');
