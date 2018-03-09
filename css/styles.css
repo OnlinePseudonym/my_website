@@ -453,11 +453,11 @@ main {
     overflow: hidden;
 }
 
-.project1 { background-image:url(../images/memory_game.jpg)}
-.project2 { background-image:url(../images/arcade_game.jpg)}
+.project1 { background-image:url(../images/simon.jpg)}
+.project2 { background-image:url(../images/calc.jpg)}
 .project3 { background-image:url(../images/neighborhood_map.jpg)}
 .project4 { background-image:url(../images/tic_tac_toe.jpg)}
-.project5 { background-image:url(../images/catch_of_the_day.jpg)}
+.project5 { background-image:url(../images/pomodoro.jpg)}
 
 .project > * {
     position: relative;
@@ -525,6 +525,10 @@ main {
     color: #111;
     border: 1px solid #111;
     border-style: solid none;
+}
+
+.tic-tac-link {
+    color: #3e82b7;
 }
 
 .project--details--container {   

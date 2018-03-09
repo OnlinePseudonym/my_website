@@ -13,7 +13,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu:400,600" rel="stylesheet">
     <title>Kevin Reynolds | Portfolio</title>
 </head>
@@ -65,12 +65,6 @@
                 <br>
             </p>
         </div>
-        <!-- <div class="hero--content--button">
-                <span class="eml">
-                    <span class="eml__text">Kevin.T.Reynolds30@gmail.com</span>
-                </span>
-                Contact Me
-            </div> -->
     </div>
     <main class="main">
         <section class="bio">
@@ -95,27 +89,6 @@
             <h1 class="title">Featured Projects</h1>
             <div class="seperator"></div>
             <div class="projects">
-                <!-- <div class="project project1">
-                    <a class="project--title link" href="https://onlinepseudonym.github.io/fend-project-memory-game/">Live Demo: Matching Game</a>
-                    <div class="project--title-small">Memory</div>
-                    <div class="project--details-toggle">
-                        <i class="fas fa-chevron-circle-left"></i>
-                    </div>
-                    <div class="project--details--container">
-                        <div class="project--details">
-                            <h3 class="details-title">Tech Used</h3>
-                            <p class="details-txt">&bull; HTML</p>
-                            <p class="details-txt">&bull; CSS</p>
-                            <p class="details-txt">&bull; jQuery</p>
-                            <h3 class="details-title">Objective</h3>
-                            <p class="details-txt">Strengthen my grasp of Javascript</p>
-                            <h3 class="details-title">Highlights</h3>
-                            <p class="details-txt">This was one of my first projects in my Front-End Nanodegree </p>
-                            <p class="details-txt">I learned jQuery and the importance of breaking things into smaller managable steps.</p>
-                        </div>
-                    </div>
-                    <a class="project--link link" href="https://github.com/OnlinePseudonym/fend-project-memory-game">View Source</a>
-                </div> -->
                 <div class="project project1">
                     <a class="project--title link" href="https://www.kevintreynolds.com/projects/simon/">
                         Live Demo: Simon
@@ -131,7 +104,7 @@
                             <p class="details-txt">&bull; CSS</p>
                             <p class="details-txt">&bull; JS</p>
                             <h3 class="details-title">Objective</h3>
-                            <p class="details-txt">Strengthen my grasp of Javascript</p>
+                            <p class="details-txt">Build a working version of 90's handheld game Simon</p>
                             <h3 class="details-title">Highlights</h3>
                             <p class="details-txt">
                                 This was a challenging project for me, I had to completely scrap my JavaScript
@@ -153,24 +126,36 @@
                     <a class="project--link link" href="https://github.com/OnlinePseudonym/simon">View Source</a>
                 </div>
                 <div class="project project2">
-                    <a class="project--title link" href="https://onlinepseudonym.github.io/frontend-nanodegree-arcade-game/">Live Demo: Frogger Clone</a>
-                    <div class="project--title-small">Frogger</div>
+                    <a class="project--title link" href="https://www.kevintreynolds.com/projects/calc/">Live Demo: JS Calc</a>
+                    <div class="project--title-small">Calculator</div>
                     <div class="project--details-toggle">
                         <i class="fas fa-chevron-circle-left"></i>
                     </div>
                     <div class="project--details--container">
                         <div class="project--details">
                             <h3 class="details-title">Tech Used</h3>
+                            <p class="details-txt">&bull; HTML</p>
+                            <p class="details-txt">&bull; CSS</p>
                             <p class="details-txt">&bull; JS</p>
                             <h3 class="details-title">Objective</h3>
-                            <p class="details-txt">Familiarize myself with Javascript prototypes</p>
+                            <p class="details-txt">Build a functional JavaScript Calculator</p>
                             <h3 class="details-title">Highlights</h3>
-                            <p class="details-txt">This project helped me think more programatically, it was one of my first experiences with an
-                                OOP approach</p>
-                            <p class="details-txt">I learned to factor out common attributes of classes and think about how my code interacts with itself, in this case the collision of different characters.</p>
+                            <p class="details-txt">
+                                This calculator ended up being a bit trickier than I thought it would be. The biggest
+                                hurdle was rounding errors from floating point arithmetic, I ended up adding a library
+                                to help with calculation.
+                            </p>
+                            <p class="details-txt">
+                                I had some gotchas I could have avoided if I'd mapped out the project more clearly from
+                                the beginning, the parens where added as an after thought because I overlooked how
+                                important they would be but it ended up being pretty trivial implementing them.
+                            </p>
+                            <p class="details-txt">
+                                This project taught me the importance of considering the entire project at each step.
+                            </p>
                         </div>
                     </div>
-                    <a class="project--link link" href="https://github.com/OnlinePseudonym/frontend-nanodegree-arcade-game">View Source</a>
+                    <a class="project--link link" href="https://github.com/OnlinePseudonym/js_calc">View Source</a>
                 </div>
                 <div class="project project3">
                     <a class="project--title link" href="https://onlinepseudonym.github.io/neighborhood_map/">Live Demo: Interactive Map</a>
@@ -187,13 +172,18 @@
                             <p class="details-txt">&bull; Knockout</p>
                             <p class="details-txt">&bull; jQuery</p>
                             <h3 class="details-title">Objective</h3>
-                            <p class="details-txt">Practice working with APIs</p>
+                            <p class="details-txt">Build an app using Google Maps API</p>
                             <h3 class="details-title">Highlights</h3>
-                            <p class="details-txt">This was probably the project where I've learned the most so far, the first project where I've started with absolutely nothing</p>
-                            <p class="details-txt">While I learned a lot about APIs I'm not ecstatic about how I implemented everything, a lot of
-                                googleing and sometimes pounding a square peg in a round hole. Adding jQuery for a couple
-                                of lines of code was overkill, and I'm really unhappy with the look, I've learned loads about
-                                CSS since then and just general design principles.</p>
+                            <p class="details-txt">
+                                This was the first project I completed where I started with nothing more than an idea,
+                                this was also my first introduction to APIs.
+                            </p>
+                            <p class="details-txt">
+                                Honestly I would do almost all of this differently now, from the technologies used to
+                                the styling but I was incredibly proud of the fact that I jumped in and truely built
+                                something from scratch. The projects I had completed up until this point had either
+                                starter code or too much hand holding.
+                            </p>
                         </div>
                     </div>
                     <a class="project--link link" href="https://github.com/OnlinePseudonym/neighborhood_map">View Source</a>
@@ -210,34 +200,53 @@
                             <p class="details-txt">&bull; React</p>
                             <p class="details-txt">&bull; CSS</p>
                             <h3 class="details-title">Objective</h3>
-                            <p class="details-txt">Familiarize myself with React</p>
+                            <p class="details-txt">Build a Tic Tac Toe game</p>
+                            <h3 class="details-title">Alternate</h3>
+                            <p class="details-txt">
+                                <a class="tic-tac-link" href="https://codepen.io/OnlinePseudonym/pen/BYxjYX" target="_blank">Here</a> is a link to another Tic Tac Toe game I built using vanilla JS with
+                                an AI that is frustrating to play!
+                            </p>
                             <h3 class="details-title">Highlights</h3>
-                            <p class="details-txt">This is the my implementation of the official React tutorial, with some modifications and styling
-                                added.</p>
-                            <p class="details-txt">This was a good introduction to React and left some implementation up to the student which I liked but didn't cover much in depth.</p>
+                            <p class="details-txt">
+                                This is one of a few tutorials I've completed to help me learn React. At some point
+                                I'll update this to an app that I was a little more hands on with but for now I wanted
+                                to show that I do at least have some familiarity with React
+                            </p>
+                            <p class="details-txt">
+                                This was a good introduction to React and left some implementation up to the student which I liked but didn't cover much in depth.
+                            </p>
                         </div>
                     </div>
                     <a class="project--link link" href="https://github.com/OnlinePseudonym/reactTicTacToe">View Source</a>
                 </div>
                 <div class="project project5">
-                    <a class="project--title link" href="https://onlinepseudonym.github.io/getting_fishy/">Live Demo: Inventory App</a>
-                    <div class="project--title-small">Inventory</div>
+                    <a class="project--title link" href="https://www.kevintreynolds.com/projects/calc/">Live Demo: Pomodoro Timer</a>
+                    <div class="project--title-small">Pomodoro Timer</div>
                     <div class="project--details-toggle">
                         <i class="fas fa-chevron-circle-left"></i>
                     </div>
                     <div class="project--details--container">
                         <div class="project--details">
                             <h3 class="details-title">Tech Used</h3>
-                            <p class="details-txt">&bull; React</p>
+                            <p class="details-txt">&bull; HTML</p>
+                            <p class="details-txt">&bull; JS</p>
                             <p class="details-txt">&bull; CSS</p>
                             <h3 class="details-title">Objective</h3>
-                            <p class="details-txt">Further practice with React</p>
+                            <p class="details-txt">Build a productivity timer in JavaScript</p>
                             <h3 class="details-title">Highlights</h3>
-                            <p class="details-txt">This is my implementation of an inventory app as part of Wes Bos' series React for Beginners.</p>
-                            <p class="details-txt">Learned to sync my React app with a Firebase backend, used github/facebook/twitter authentication.</p>
+                            <p class="details-txt">
+                                Honestly there weren't a lot of gotchas in this particular project, it was all pretty
+                                straight forward I think the most time consuming part of the project was stying
+                                everything and getting the timer strokedash working the way I wanted.
+                            </p>
+                            <p class="details-txt">
+                                I had a little experience using that technique for a small progress bar before but it
+                                has been a while and I didn't animate it like I did here. Setting up the animation to
+                                smoothly transition from work to break and vice versa was also a small gotcha.
+                            </p>
                         </div>
                     </div>
-                    <a class="project--link link" href="https://github.com/OnlinePseudonym/React-For-Beginners-Starter-Files">View Source</a>
+                    <a class="project--link link" href="https://github.com/OnlinePseudonym/pomodoro_timer">View Source</a>
                 </div>
             </div>
         </section>
@@ -261,7 +270,7 @@
             </div>
         </div>
     </footer>
-    <script src="js/app.min.js"></script>
+    <script src="js/app.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </body>
 
