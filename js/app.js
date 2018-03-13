@@ -79,8 +79,10 @@ function openDetails(e) {
 }
 
 function toggleActive(e) {
-    if(e.propertyName.includes('flex-grow')) {
-        this.classList.toggle('open-active');
+    if(e.propertyName.includes('flex-grow') && e.target.classList.contains('open')) {
+        this.classList.add('open-active');
+    } else if (e.propertyName.includes('flex-grow')) {
+        this.classList.remove('open-active');
     }
 }
 
