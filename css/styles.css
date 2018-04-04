@@ -372,11 +372,6 @@ main {
 
 /** about-me styling **/
 
-.bio {
-    -ms-grid-row: 1;
-    grid-row: 1;
-}
-
 .about-me-container {
     display: grid;
     grid-auto-flow: row;
@@ -511,7 +506,7 @@ main {
 .project1 { background-image:url(../images/simon.jpg)}
 .project2 { background-image:url(../images/calc.jpg)}
 .project3 { background-image:url(../images/neighborhood_map.jpg)}
-.project4 { background-image:url(../images/tic_tac_toe.jpg)}
+.project4 { background-image:url(../images/react_timer.jpg)}
 .project5 { background-image:url(../images/pomodoro.jpg)}
 
 .project > * {
