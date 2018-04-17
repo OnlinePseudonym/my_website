@@ -503,9 +503,9 @@ main {
     overflow: hidden;
 }
 
-.project1 { background-image:url(../images/simon.jpg)}
+.project1 { background-image:url(../images/florencia.jpg)}
 .project2 { background-image:url(../images/calc.jpg)}
-.project3 { background-image:url(../images/neighborhood_map.jpg)}
+.project3 { background-image:url(../images/simon.jpg)}
 .project4 { background-image:url(../images/react_timer.jpg)}
 .project5 { background-image:url(../images/pomodoro.jpg)}
 
@@ -634,6 +634,7 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: auto;
+    cursor: text;
 }
 
 @media only screen and (min-width: 400px) {
@@ -688,6 +689,9 @@ main {
 
 .details-txt {
     margin: 0 0 4px 0;
+}
+.details-link {
+    color: #438afd;
 }
 
 .details-title {
